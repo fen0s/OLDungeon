@@ -1,5 +1,5 @@
 # OLDungeon
-Only for real elders who really want to experience old AI Dungeon experience. Thadunge2 fork with small additions. Get model from thadunge and put it in models folder inside generator/gpt2 to make it work.
+Only for real elders who really want to experience old AI Dungeon. Thadunge2 fork with small additions. Get model from thadunge and put it in models folder inside generator/gpt2 to make it work.
 
 # Features
 * World Info taken from up-to-date AI Dungeon, see WI Manager for creation of world info
