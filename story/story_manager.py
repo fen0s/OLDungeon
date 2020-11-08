@@ -24,7 +24,7 @@ class Story:
         self.context = context
         self.temp_context = ""
         self.rating = -1
-
+        self.author_note = ""
         # list of actions. First action is the prompt length should always equal that of story blocks
         self.actions = []
 
@@ -78,7 +78,8 @@ class Story:
             latest_result = self.context
         latest_result += self.temp_context
         while mem_ind > 0:
-
+            if mem_ind == 1:
+                latest_result = latest_result + "\n" + "["+ self.author_note + "]\n" if self.author_note else latest_result
             if len(self.results) >= mem_ind:
                 latest_result += self.actions[-mem_ind] + self.results[-mem_ind]
 
