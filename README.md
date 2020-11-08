@@ -12,7 +12,7 @@ Only for real elders who really want to experience old AI Dungeon. Thadunge2 for
 * Colorama for better UI
 
 # Installation
-1. Do `pip -r requirements.txt` in game folder
+1. Do `pip install -r requirements.txt` in game folder
 2. Download the model_v5 through torrent: https://github.com/AIDungeon/AIDungeon/files/3935881/model_v5.torrent.zip
 3. Put model_v5 folder after it's downloaded to /generator/gpt2/models
 4. Run play.py
