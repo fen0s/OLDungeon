@@ -643,6 +643,13 @@ def play_aidungeon_2():
                     else:
                         story_manager.story.context += " ".join(args[0:]).capitalize() + ". "
                         console_print("You make sure to remember {}.".format(" ".join(action.split(" ")[1:])))
+                elif command == 'authornote':
+                    if args:
+                        story_manager.story.author_note = "Author's Note: " + " ".join(args[0:])
+                        console_print('''Set author's note to: "''' + story_manager.story.author_note.replace("AUTHOR'S NOTE: ", "") + '"')
+                    else:
+                        story_manager.story.author_note = ""
+                        console_print("Cleared author's note")
 
                 elif command == 'retry':
                     if len(story_manager.story.actions) > 0:
@@ -700,7 +707,8 @@ def play_aidungeon_2():
                     except:
                         console_print("Something went wrong, cancelling.")
                         pass
-
+                elif command == "lmi":
+                    console_print(story_manager.story.latest_result())
                 elif command == 'altergen':
                     try:
                         if len(story_manager.story.actions) > 0:
