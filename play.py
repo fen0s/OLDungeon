@@ -241,6 +241,7 @@ def instructions():
     text += "\nThe following commands can be entered for any action: "
     text += '\n  "/revert"         Reverts the last action allowing you to pick a different'
     text += '\n                    action.'
+    text += '\n  "/authornote"     Change author note like in AID. Works half the time.'
     text += '\n  "/retry"          Reverts the last action and tries again with the same action.'
     text += '\n  "/alter"          Edit the most recent AI response'
     text += '\n  "/altergen"       Edit the beginning of the most recent response and have the'
