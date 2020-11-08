@@ -5,6 +5,7 @@ Only for real elders who really want to experience old AI Dungeon. Thadunge2 for
 * World Info taken from up-to-date AI Dungeon, see WI Manager for creation of world info
 * Prompt browsing 
 * Variables in prompts
+* Author's note
 
 # Features in work
 * Translation with googletrans library
